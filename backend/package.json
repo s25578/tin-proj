@@ -1,0 +1,19 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/s25578/tin-proj/backend"
+  },
+  "author": "s25578",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
