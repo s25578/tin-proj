@@ -5,6 +5,7 @@
 The simples and fastest way to run the app is just open the folder and run:
 
 ```
+cd tin-proj
 docker compose up -d --build
 ```
 

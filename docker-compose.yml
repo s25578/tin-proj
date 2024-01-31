@@ -26,17 +26,13 @@ services:
       - app-network
 
   db:
-    image: mysql:latest
-    command: --default-authentication-plugin=mysql_native_password
-    ports:
-      - "${MYSQL_PORT}:3306"
-    volumes:
-      - db-data:/var/lib/mysql
+    image: postgres
     environment:
-      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
-      MYSQL_DATABASE: ${MYSQL_DATABASE}
-      MYSQL_USER: ${MYSQL_USER}
-      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      POSTGRES_DB: ${DB_DATABASE}
+      POSTGRES_USER: ${DB_USERNAME}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    ports:
+      - "5432:5432"
     networks:
       - app-network
 
