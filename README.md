@@ -1,5 +1,13 @@
 # TIN project
 
+This is Planet Builder v0.0.3 project, where anybody can be a part of our planet creators community:)
+
+## Demo 
+
+![tutorial.gif](tutorial.gif)
+
+...
+
 ## Quickstart
 
 The simples and fastest way to run the app is just open the folder and run:
@@ -15,9 +23,13 @@ The app will be available at:
 
 ## Seeding
 
-`
+To create tables and seed all the data:
+
+```
 docker exec -it tin-proj-backend-1  bash -c "node src/initializeDb.js && node src/seeders/rolesSeeder.js && node src/seeders/categoriesSeeder.js && node src/seeders/usersSeeder.js && node src/seeders/planetsSeeder.js && node src/seeders/boostsSeeder.js"
-`
+```
+
+## Get in
 
 Enter the backend container
 ```

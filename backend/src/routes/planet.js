@@ -5,6 +5,8 @@ const db = require('../models');
 router.post('/planets', async (req, res) => {
     try {
         const newPlanet = await db.planet.create({
+            category_id: req.body.category_id,
+            author_id: req.body.author_id,
             name: req.body.name,
             radius: req.body.radius,
             description: req.body.description,
